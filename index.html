@@ -16,6 +16,7 @@
         justify-content: start;
         align-items:flex-start;
         margin-bottom: 1em;
+        width: 90%;
     }
     dt{
         width: 5em;
@@ -107,7 +108,7 @@
                 const graduate  = $('select[name="graduate"]').val();
                 const tel       = $('input[name="tel"]').val();
                 const email     = $('input[name="email"]').val();
-                const msg = `名簿登録\n${lastname}\n${firstname}\n${pastname}\n${tel}\n${email}\n`;
+                const msg = `名簿登録\n${lastname}\n${firstname}\n${pastname}\n${tel}\n${email}`;
                 sendText(msg);
                 return false;
             });
