@@ -12,61 +12,68 @@
     }
     dl{
         display: flex;
-        margin: 0 auto;
         justify-content: start;
         align-items:flex-start;
         margin-bottom: 1em;
-        width: 90%;
     }
     dt{
         width: 5em;
+    }
+    dd{
+        margin: 0;
+    }
+    #inputform{
+        margin: 0 auto;
+        width: 80%;
     }
 </style>
 <body>
     <form>
         <h2>名簿登録</h2>
-        <dl>
-            <dt>姓</dt>
-            <dd><input type="text" name="lastname" required></dd>
-        </dl>
-        <dl>
-            <dt>名</dt>
-            <dd><input type="text" name="firstname" required></dd>
-        </dl>
-        <dl>
-            <dt>旧姓</dt>
-            <dd><input type="text" name="pastname"></dd>
-        </dl>
-        <dl>
-            <dt>卒業組</dt>
-            <dd>
-                <select name="graduate" id="" required>
-                    <option value="1">1組 厚見学級</option>
-                    <option value="2">2組 宮本学級</option>
-                    <option value="1">3組 田村学級</option>
-                    <option value="1">4組 浅野学級</option>
-                    <option value="5">その他</option>
-                </select>
-            </dd>
-        </dl>
-        <dl>
-            <dt>電話番号</dt>
-            <dd>
-                <input type="tel" name="tel" id="">
-            </dd>
-        </dl>
-        <dl>
-            <dt>メール</dt>
-            <dd>
-                <input type="email" name="email" id="">
-            </dd>
-        </dl>
-        <dl>
-            <dt></dt>
-            <dd>
-                <input type="submit" class="" value="送信">
-            </dd>
-        </dl>
+        <div id="inputform">
+            <dl>
+                <dt>姓</dt>
+                <dd><input type="text" name="lastname" required></dd>
+            </dl>
+            <dl>
+                <dt>名</dt>
+                <dd><input type="text" name="firstname" required></dd>
+            </dl>
+            <dl>
+                <dt>旧姓</dt>
+                <dd><input type="text" name="pastname"></dd>
+            </dl>
+            <dl>
+                <dt>卒業組</dt>
+                <dd>
+                    <select name="graduate" id="" required>
+                        <option value="1">1組 厚見学級</option>
+                        <option value="2">2組 宮本学級</option>
+                        <option value="1">3組 田村学級</option>
+                        <option value="1">4組 浅野学級</option>
+                        <option value="5">その他</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl>
+                <dt>電話番号</dt>
+                <dd>
+                    <input type="tel" name="tel" id="">
+                </dd>
+            </dl>
+            <dl>
+                <dt>メール</dt>
+                <dd>
+                    <input type="email" name="email" id="">
+                </dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>
+                    <input type="submit" class="" value="送信">
+                </dd>
+            </dl>
+        </div>
     </form>
 
     <script>
